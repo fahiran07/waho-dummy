@@ -1,9 +1,9 @@
 #main-box {
-	background-image: url(/assets/images/scan-background.jpg);
+	background-image: url(../images/scan-background.jpg);
 	background-size: 100% 100%;
 }
 #scanner-box {
-	background-image: url(/assets/images/scanner-back.jpg);
+	background-image: url(../images/scanner-back.jpg);
 	background-size: 100% 100%;
 }
 #scanner-text {
