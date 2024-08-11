@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/assets/css/utils.css" />
+		<link rel="stylesheet" href="/assets/css/scan.css" />
+	</head>
+	<body>
+		<div class="vh-100 vw-100" id="main-box" onclick="show_scanner()">
+			<div id="scanner-box" class="vh-100 vw-100 fixed-top d-flex-center d-none">
+				<div id="scanner-text" class="w-55 p-2 text-center rounded-1">
+					<p class="mb-0 text-secondary-light">System maintainance in progress, scanning temporarily unavailable.</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			function show_scanner() {
+				document.getElementById("scanner-box").classList.remove("d-none");
+				document.getElementById("scanner-box").classList.add("show-scanner");
+				setTimeout(() => {
+					document.getElementById("scanner-text").classList.add("scanner-text-animation");
+				}, 1000);
+			}
+		</script>
+	</body>
+</html>

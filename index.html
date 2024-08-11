@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/assets/css/utils.css" />
+		<link rel="stylesheet" href="/assets/css/home.css" />
+	</head>
+	<body class="vh-100 vw-100">
+		<div id="button-box" class="d-flex-center w-100">
+			<button id="login-btn" class="w-90 bg-none border-0" onclick="start_loading()"></button>
+		</div>
+		<section id="loader" class="float-blur d-flex-center d-none">
+			<div class="loading-inner-box d-flex-center flex-column rounded-2">
+				<div id="spinner" class="mb-1"></div>
+				<p class="mb-0 text-secondary-light">loading</p>
+			</div>
+		</section>
+		<script>
+			function start_loading() {
+				let loader = document.getElementById("loader");
+				loader.classList.remove("d-none");
+				setTimeout(() => {
+					location.href = "/scan.html";
+				}, 2000);
+			}
+		</script>
+	</body>
+</html>

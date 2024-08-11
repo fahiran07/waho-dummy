@@ -1,0 +1,15 @@
+#main-box {
+	background-image: url(/assets/images/scan-background.jpg);
+	background-size: 100% 100%;
+}
+#scanner-box {
+	background-image: url(/assets/images/scanner-back.jpg);
+	background-size: 100% 100%;
+}
+#scanner-text {
+	background-color: rgba(0, 0, 0, 0.593);
+}
+.scanner-text-animation {
+	opacity: 0; /* initial opacity is 0, so the text is hidden */
+	transition: opacity 1s; /* add transition effect to opacity */
+}
